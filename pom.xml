@@ -34,6 +34,29 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.apache.dubbo/dubbo -->
+		<dependency>
+			<groupId>org.apache.dubbo</groupId>
+			<artifactId>dubbo</artifactId>
+			<version>3.0.4</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.apache.dubbo/dubbo-spring-boot-starter -->
+		<dependency>
+			<groupId>org.apache.dubbo</groupId>
+			<artifactId>dubbo-spring-boot-starter</artifactId>
+			<version>3.0.4</version>
+			<scope>pom</scope>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.apache.dubbo/dubbo-dependencies-zookeeper -->
+		<dependency>
+			<groupId>org.apache.dubbo</groupId>
+			<artifactId>dubbo-dependencies-zookeeper</artifactId>
+			<version>3.0.4</version>
+			<type>pom</type>
+		</dependency>
+
 	</dependencies>
 
 <!-->	<build>
