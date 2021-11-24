@@ -18,9 +18,12 @@ public class testcontroller {
         return  "hello word";
     }
 
-    public void GetLog(){
+
+    @GetMapping("/getlog")
+    public String GetLog(){
        String Log= testService.getLog();
         System.out.println(Log);
+        return Log;
 
     }
 }

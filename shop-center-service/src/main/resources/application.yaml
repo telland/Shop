@@ -1,14 +1,14 @@
 
 server:
-  port: 8100
+  port: 8101
 dubbo:
   application:
-    name: merchant-server
+    name: shop
   registry:
     protocol: zookeeper
     address: 127.0.0.1
     port: 2181
-    timeout: 3000
+    timeout: 30000
   protocol:
     port: 20880
     name: dubbo
