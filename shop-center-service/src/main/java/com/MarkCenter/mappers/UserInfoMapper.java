@@ -7,4 +7,5 @@ import org.apache.ibatis.annotations.Param;
 
 public interface UserInfoMapper extends BaseMapper<UserInfo> {
 
+
 }

@@ -2,7 +2,7 @@ package com.MarkCenter.Service;
 
 import Entity.UserInfo;
 import com.MarkCenter.mappers.UserInfoMapper;
-import com.ShopCenterApi.Test.UserInfoService;
+import com.ShopCenterApi.UserInfoService.UserInfoService;
 import org.apache.dubbo.config.annotation.Service;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -16,4 +16,23 @@ public class UserInfoImpl implements UserInfoService {
     public List<UserInfo> selectAll() {
         return userInfoMapper.selectAll();
     }
+
+    @Override
+    public int addUserInfo(UserInfo userInfo) {
+        return userInfoMapper.insert(userInfo);
+    }
+
+    @Override
+    public int delUserInfoById(int id) {
+        return userInfoMapper.deleteByPrimaryKey(id);
+    }
+
+    @Override
+    public int updateUserInfoById(UserInfo userInfo,int id) {
+        return userInfoMapper.updateByExample(userInfo,id);
+    }
+
+
+
+
 }
