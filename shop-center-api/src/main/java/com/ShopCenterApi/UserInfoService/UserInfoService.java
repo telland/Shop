@@ -7,6 +7,8 @@ import java.util.List;
 public interface UserInfoService {
     List<UserInfo> selectAll();
     int addUserInfo(UserInfo userInfo);
-    int delUserInfoById(int id);
-    int updateUserInfoById(UserInfo userInfo,int id);
+    int delUserInfo(Long id);
+    int updateUserInfo(UserInfo userInfo);
+    UserInfo findById(int id);
 }
+

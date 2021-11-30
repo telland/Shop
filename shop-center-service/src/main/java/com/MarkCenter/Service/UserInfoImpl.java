@@ -23,16 +23,19 @@ public class UserInfoImpl implements UserInfoService {
     }
 
     @Override
-    public int delUserInfoById(int id) {
+    public int delUserInfo(Long id) {
         return userInfoMapper.deleteByPrimaryKey(id);
     }
 
     @Override
-    public int updateUserInfoById(UserInfo userInfo,int id) {
-        return userInfoMapper.updateByExample(userInfo,id);
+    public int updateUserInfo(UserInfo userInfo) {
+        return userInfoMapper.updateByPrimaryKey(userInfo);
     }
 
-
+    @Override
+    public UserInfo findById(int id) {
+        return userInfoMapper.selectByPrimaryKey(id);
+    }
 
 
 }

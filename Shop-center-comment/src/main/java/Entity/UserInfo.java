@@ -14,7 +14,6 @@ import java.util.Date;
 @Accessors(chain = true)
 @Table(name = "user_info")
 public class UserInfo extends BaseEntity {
-    private Long id;
 
     private String userName;
 
@@ -25,12 +24,4 @@ public class UserInfo extends BaseEntity {
     private Byte type;
 
     private Long shopId;
-
-    private Byte deleteFlag;
-
-    private Date createTime;
-
-    private Date updateTime;
-
-
 }
